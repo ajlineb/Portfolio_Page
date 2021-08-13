@@ -1,0 +1,381 @@
+:root {
+    --header-color: rgb(50, 47, 59);
+    --outline-color: rgb(141, 129, 255);
+    --body-color: rgb(233, 227, 227);
+    --body-color2:rgb(180, 180, 180);
+    --body-titles-color: rgb(89, 57, 126);
+}
+
+/*Controls the header box and its spacing*/
+header {
+    background-color: var(--header-color);
+    border-bottom: 1.5px solid rgb(40, 38, 48);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+}
+
+body {
+    background-image: linear-gradient(
+        var(--body-color) 0%,
+        var(--body-color2) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*controles the colors of each title in the body*/
+main h1{
+    color: var(--body-titles-color);
+    font-size: 40px;
+}
+
+/*link decorations*/
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: var(--outline-color);
+}
+
+/*a {
+    display: inline-block
+}
+*/
+footer {
+    width: 100%;
+    background-color: var(--header-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1.5px solid rgb(40, 38, 48);
+}
+
+footer h3 {
+    color:white;
+    padding: 1rem;
+}
+
+/*Header name and its attributes*/
+.name {
+    background-color: var(--outline-color);
+    color: var(--header-color);
+    padding: 5px 10px 5px 40px;
+}
+
+/*box containing links in the header*/
+.links {
+    margin: 10px 25px 5px 20px;
+}
+
+/*decoration and spacing of the links individually*/
+.links li {
+    display: inline;
+    margin: 0px 2px 0px 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    color: var(--outline-color);
+    font-weight: 700;
+    border-bottom: 3px solid var(--outline-color);
+}
+
+/*box under the header and its attributes*/
+.subheader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFubmVyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-repeat:repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.avatarContainer {
+    position: relative;
+    height: 200px;
+    margin-left: 6rem;
+    width: 200px;
+}
+.avatar{
+    position: absolute;
+    height: 170px;
+    width:170px;
+    top:50%;
+    transform: translate(0%,-50%);
+    border: 5px solid var(--outline-color);
+    box-shadow: 10px 5px 10px rgba(133, 7, 158, 0.356);
+}
+
+.subtitleContainer{
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+/*information inside the subheader controlling the decorations and positioning/spacing*/
+.subtitle {
+    background-color: var(--outline-color);
+    color: var(--header-color);
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    bottom: 4px;
+    right: 0px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 25px 10px 0px;
+    font-size: 20px;
+    box-shadow: 10px 5px 10px rgba(133, 7, 158, 0.356);
+}
+
+.aboutMe-container {
+    margin: 30px 40px 30px 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.aboutMe-title {
+    top: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    flex: 0 0 0px;
+    min-width: 10rem;
+}
+
+.aboutMe-info {
+    top: 0px;
+    flex: 1;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-left: 3px solid var(--body-titles-color);
+    line-height: 1.4;
+}
+
+.work-container {
+    margin: 30px 40px 30px 100px;
+    position: relative;
+    display: flex;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    
+}
+
+.work-title {
+    top: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    flex: 0 0 0px;
+    min-width: 10rem;
+}
+/*sets up the grid in this container*/
+.work-info {
+    border-left: 3px solid var(--body-titles-color);
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+    grid-template-areas: 
+        'header header header header header header'
+        'left left left right right right'
+        'footerleft footerleft footerleft footerRight footerRight footerRight';
+    grid-gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    flex:1;
+}
+
+/*gives borders for all the items in the work conatiner*/
+.work-info div {
+    border: 5px solid var(--outline-color);
+}
+
+.info-1 {
+    position: relative;
+    grid-area: header;
+    text-align: center;
+    max-height: 30rem;
+    background-color: black;
+    /*background-image: url(https://michaelbrant.com/wp-content/uploads/2012/06/photodune-907221-css3-code-m.jpg);*/
+}
+
+.work-container img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    filter: blur(6px);
+}
+
+.info-2 {
+    position: relative;
+    grid-area: left;
+    text-align: center;
+    max-height: 10rem;
+    min-width: 0px;
+    background-color: black;
+}
+
+.info-3 {
+    position: relative;
+    grid-area: right;
+    text-align: center;
+    max-height: 10rem;
+    min-width: 0px;
+    background-color: black;
+}
+
+.info-4 {
+    position: relative;
+    grid-area: footerleft;
+    text-align: center;
+    max-height: 10rem;
+    min-width: 0px;
+    background-color: black;
+}
+
+.info-5 {
+    position: relative;
+    grid-area: footerRight;
+    text-align: center;
+    max-height: 10rem;
+    min-width: 0px;
+    background-color: black;
+}
+/*text within the workinfo container*/
+.text {
+    color: var(--header-color);
+    background-color: var(--outline-color);
+    position:absolute;
+    bottom: 1rem;
+    left: 0px;
+    line-height: 1.4;
+    z-index: 1;
+}
+
+.text p {
+    font-size: .7rem;
+}
+
+.contactMe-container {
+    margin: 30px 40px 30px 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.contactMe-title {
+    top: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    flex: 0 0 0px;
+    min-width: 10rem;
+}
+
+.contactMe-info {
+    top: 0px;
+    flex: 1;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 2rem;
+    border-left: 3px solid var(--body-titles-color);
+    line-height: 1.4;    
+    text-align: center;
+}
+
+.contactMe-info li{
+    display: inline;
+    margin: 5px 5px 0px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 4px;
+    color: var(--outline-color);
+    font-weight: 700;
+    border-bottom: 3px solid var(--outline-color);
+}
+
+
+.work-container img:hover {
+    filter:none;
+    box-shadow: inset 0px 0px 0px var(--body-titles-color), 0 0 25px var(--body-titles-color);
+}
+
+/*helps make the webpage mobile friendly*/
+@media screen and (max-width: 1070px) {
+    /*header{
+        justify-content: center;
+    }
+    .subtitle {
+        margin-left: 50%;
+        transform: translate(-50%);
+    }*/
+    .subheader{
+        flex-direction: column;
+        height: 290px;
+    }
+    .aboutMe-container {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .aboutMe-title {
+        flex: 1 0 0px;
+        text-align: left;
+        margin-left:0px;
+    }
+    .aboutMe-info {
+        flex-wrap: wrap;
+        border-left: none;
+        border-top: 3px solid var(--body-titles-color);
+        padding-top: 20px;
+        padding-left:0px;
+    }
+    .work-container {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .work-title {
+        text-align: left;
+        margin-left: 0px;
+    }
+    .work-info {
+        flex-wrap: wrap;
+        border-left: none;
+        border-top: 3px solid var(--body-titles-color);
+        padding-top: 20px;
+        padding-left:0px;
+        grid-template-areas: 
+        'header header header header header header'
+        'left left left left left left'
+        'right right right right right right'
+        'footerleft footerleft footerleft footerleft footerleft footerleft '
+        'footerRight footerRight footerRight footerRight footerRight footerRight';
+    }
+    .info-1{
+        max-height: 10rem;
+    }
+    .contactMe-container {
+        flex-direction: column;
+        margin-left: 40px;
+    }
+    .contactMe-title {
+        flex: 1 0 0px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    .contactMe-info{
+        flex-wrap: wrap;
+        flex-grow: 1;
+        border-left: none;
+        border-top: 3px solid var(--body-titles-color);
+        padding-top: 20px;
+        padding-left:0px;
+        text-align: left;
+    }
+    .contactMe-info li{
+        margin-right: 50rem;
+        margin-top: 20px;
+        line-height: 30px;
+    }
+}
