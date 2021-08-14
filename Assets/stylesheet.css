@@ -36,10 +36,6 @@ a:hover, a:visited, a:link, a:active {
     color: var(--outline-color);
 }
 
-/*a {
-    display: inline-block
-}
-*/
 footer {
     width: 100%;
     background-color: var(--header-color);
@@ -91,12 +87,15 @@ footer h3 {
     background-position: center;
 
 }
+
 .avatarContainer {
     position: relative;
     height: 200px;
     margin-left: 6rem;
     width: 200px;
 }
+
+/*Image in the top left */
 .avatar{
     position: absolute;
     height: 170px;
@@ -112,6 +111,7 @@ footer h3 {
     flex-grow: 1;
     flex-shrink: 1;
 }
+
 /*information inside the subheader controlling the decorations and positioning/spacing*/
 .subtitle {
     background-color: var(--outline-color);
@@ -190,20 +190,19 @@ footer h3 {
     border: 5px solid var(--outline-color);
 }
 
+.work-container img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    filter: blur(6px);
+}
+
 .info-1 {
     position: relative;
     grid-area: header;
     text-align: center;
     max-height: 30rem;
     background-color: black;
-    /*background-image: url(https://michaelbrant.com/wp-content/uploads/2012/06/photodune-907221-css3-code-m.jpg);*/
-}
-
-.work-container img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: fill;
-    filter: blur(6px);
 }
 
 .info-2 {
