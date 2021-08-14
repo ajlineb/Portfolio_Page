@@ -22,7 +22,7 @@ Credits to images used in the document are located at the bottom with easy click
 
 ## Images
 
-![alt website](/Portfolio_Page/Assets/Images/Portfolio_Webpage.png)
+![alt website](/Assets/Images/Portfolio_Webpage.png)
 
 ## Credits
 
