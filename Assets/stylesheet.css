@@ -110,6 +110,7 @@ footer h3 {
     position: relative;
     flex-grow: 1;
     flex-shrink: 1;
+    margin-left: 6rem;
 }
 
 /*information inside the subheader controlling the decorations and positioning/spacing*/
