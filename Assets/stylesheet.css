@@ -17,11 +17,13 @@ header {
 }
 
 body {
-    background-image: linear-gradient(
+    background-color:var(--body-color) ;
+    
+    /*background-image: linear-gradient(
         var(--body-color) 0%,
         var(--body-color2) 100%);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 
 /*controles the colors of each title in the body*/
