@@ -193,6 +193,7 @@ footer h4 {
 /*gives borders for all the items in the work conatiner*/
 .work-info div {
     border: 5px solid var(--outline-color);
+    z-index: 1;
 }
 
 .work-container img {
