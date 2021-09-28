@@ -4,6 +4,7 @@
     --body-color: rgb(233, 227, 227);
     --body-color2:rgb(180, 180, 180);
     --body-titles-color: rgb(89, 57, 126);
+    --text-font: cursive;
 }
 
 /*Controls the header box and its spacing*/
@@ -18,7 +19,7 @@ header {
 
 body {
     background-color:var(--body-color) ;
-    
+    font-family:var(--text-font);
     /*background-image: linear-gradient(
         var(--body-color) 0%,
         var(--body-color2) 100%);
@@ -137,7 +138,6 @@ footer h4 {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .aboutMe-title {
@@ -185,7 +185,8 @@ footer h4 {
         'left left left right right right'
         'footerleft footerleft footerleft footerRight footerRight footerRight';
     grid-gap: 10px;
-    padding-left: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
     padding-bottom: 20px;
     flex:1;
 }
@@ -209,6 +210,7 @@ footer h4 {
     text-align: center;
     max-height: 30rem;
     background-color: black;
+    box-shadow: 5px 9px 3px rgba(32, 32, 32, 0.36);
 }
 
 .info-2 {
@@ -218,6 +220,7 @@ footer h4 {
     max-height: 10rem;
     min-width: 0px;
     background-color: black;
+    box-shadow: 5px 9px 3px rgba(32, 32, 32, 0.36);
 }
 
 .info-3 {
@@ -227,6 +230,7 @@ footer h4 {
     max-height: 10rem;
     min-width: 0px;
     background-color: black;
+    box-shadow: 5px 9px 3px rgba(32, 32, 32, 0.36);
 }
 
 .info-4 {
@@ -236,6 +240,7 @@ footer h4 {
     max-height: 10rem;
     min-width: 0px;
     background-color: black;
+    box-shadow: 5px 9px 3px rgba(32, 32, 32, 0.36);
 }
 
 .info-5 {
@@ -245,6 +250,7 @@ footer h4 {
     max-height: 10rem;
     min-width: 0px;
     background-color: black;
+    box-shadow: 5px 9px 3px rgba(32, 32, 32, 0.36);
 }
 /*text within the workinfo container*/
 .text {
@@ -286,7 +292,6 @@ footer h4 {
     padding-bottom: 20px;
     padding-top: 2rem;
     border-left: 3px solid var(--body-titles-color);
-    line-height: 1.4;    
     text-align: center;
 }
 
@@ -298,6 +303,7 @@ footer h4 {
     padding-bottom: 4px;
     color: var(--outline-color);
     font-weight: 700;
+    font-size: 1.5rem;
     border-bottom: 3px solid var(--outline-color);
 }
 
@@ -305,6 +311,11 @@ footer h4 {
 .work-container img:hover {
     filter:none;
     box-shadow: inset 0px 0px 0px var(--body-titles-color), 0 0 25px var(--body-titles-color);
+}
+.lastThought {
+    font-weight: 900;
+    color: var(--outline-color);
+    font-size: 1.3rem;
 }
 
 /*helps make the webpage mobile friendly*/
@@ -350,6 +361,7 @@ footer h4 {
         border-top: 3px solid var(--body-titles-color);
         padding-top: 20px;
         padding-left:0px;
+        padding-right: 20px;
         grid-template-areas: 
         'header header header header header header'
         'left left left left left left'
@@ -381,6 +393,7 @@ footer h4 {
     .contactMe-info li{
         margin-right: 50rem;
         margin-top: 20px;
-        line-height: 30px;
+        line-height: 2rem;
+        font-size: 1rem;
     }
 }
